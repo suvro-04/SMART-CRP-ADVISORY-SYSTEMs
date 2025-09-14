@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmassist</title>
+    <link rel="icon" type="image/jpg" href="img.jpg">
+    <link rel="stylesheet" href="botstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../backend/fertilizer.js"></script>
+    <script src="../backend/season.js"></script>
+    <script src="../backend/pest_control.js"></script>
+    <script src="../backend/data.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+    <div class="chat-header">
+      <h1> FarmAssist <i class="fa-solid fa-seedling"></i> </h1>
+      <p>Expert guidance for crops, fruits & vegetables farming</p>
+      <div class="quick-actions">
+        <button class="quick-btn" onclick="quickQuery('crop seasons')"><i class="fa-solid fa-calendar-days"></i> Seasons</button>
+        <button class="quick-btn" onclick="quickQuery('pest control')"><i class="fa-solid fa-bug"></i>Pest Control</button>
+        <button class="quick-btn" onclick="quickQuery('fertilizer guide')"><i class="fa-solid fa-flask-vial"></i>Fertilizers</button>
+        <button class="quick-btn" onclick="quickQuery('market prices')"><i class="fa-solid fa-coins"></i> Prices</button>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="welcome-message">
+        <h3> Hi, I am FarmAssist! <i class="fa-solid fa-seedling"></i></h3>
+        <p>How can I help you today?</p>
+      </div>
+    </div>
+
+    <div class="chat-input-container">
+      <div class="input-group">
+        <input type="text" class="chat-input" id="messageInput" placeholder="Ask about crops, fruits, vegetables, farming tips..." maxlength="500">
+        <button class="send-btn" onclick="sendMessage()"> Send</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Assistant Dashboard</title>
+    <link rel="icon" type="image/jpg" href="img.jpg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../backend/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="profile-section">
+                <div class="profile-avatar"></div>
+                <div class="profile-name">Farm User</div>
+                <div class="profile-role">Agricultural Assistant</div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="bot.html" class="nav-link">
+                        <span class="nav-icon"></span>
+                        FarmAssist (Chatbot)
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="weather.html" class="nav-link">
+                        <span class="nav-icon"></span>
+                        Weather
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="scheme.html" class="nav-link">
+                        <span class="nav-icon"></span>
+                        Government Schemes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="schedule.html" class="nav-link">
+                        <span class="nav-icon"></span>
+                        Schedule
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">
+                        <span class="nav-icon"></span>
+                        Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        <span class="nav-icon"></span>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h1>Farm Assistant Dashboard</h1>
+                <p>Your complete agricultural management solution</p>
+            </div>
+
+            <!-- Weather Alert Section -->
+            <div class="weather-alert">
+                <div class="alert-header">
+                    <span class="alert-icon">⚠</span>
+                    <h3 class="alert-title">Weather Alert</h3>
+                </div>
+                <div class="alert-content">
+                    Heavy rainfall expected in your area over the next 48 hours. Consider protecting your crops and checking drainage systems. Wind speeds may reach up to 45 km/h.
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <div class="service-card" onclick="location.href='bot.html'">
+                    <span class="service-icon"><i class="fa-solid fa-robot"></i></span>
+                    <h3 class="service-title">FarmAssist Chatbot</h3>
+                    <p class="service-description">Get instant answers to your farming questions with our custome database powerd assistant available 24/7</p>
+                </div>
+
+                <div class="service-card" onclick="location.href='weather.html'">
+                    <span class="service-icon">🌤</span>
+                    <h3 class="service-title">Weather Forecast</h3>
+                    <p class="service-description">Stay updated with detailed weather forecasts, alerts, and agricultural advisories for your region</p>
+                </div>
+
+                <div class="service-card" onclick="location.href='scheme.html'">
+                    <span class="service-icon">🏛</span>
+                    <h3 class="service-title">Government Schemes</h3>
+                    <p class="service-description">Discover and apply for various government agricultural schemes, subsidies, and support programs</p>
+                </div>
+
+                <div class="service-card" onclick="location.href='schedule.html'">
+                    <span class="service-icon"><i class="fa-solid fa-book"></i></span>
+                    <h3 class="service-title">Schedule Tracker</h3>
+                    <p class="service-description">Plan and track your farming activities, crop cycles, and important agricultural milestones</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
